@@ -1,0 +1,13 @@
+#!/bin/bash
+chmod --reference=olleh hello
+
+// The --reference option is used to specify the reference file, from which the permissions will be copied.
+chmod: The command used to change file permissions.
+--reference=olleh: The --reference option specifies that the permissions will be copied from the file named "olleh" (which is the reference file).
+hello: This is the target file whose permissions will be set to match the reference file "olleh."
+So, when you run this command, the permissions of the "hello" file will be updated to be exactly the same as the permissions of the "olleh" file. This includes the read, write, and execute permissions for the owner, group, and others.
+
+
+
+
+

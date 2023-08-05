@@ -1,0 +1,16 @@
+#!/bin/bash
+chmod 007 hello
+
+// When using the numeric mode, you can set the permissions for all three user classes (owner, group, and all others) at the same time.
+
+The NUMBER can be a 3 or 4-digits number.
+
+When 3 digits number is used, the first digit represents the permissions of the file’s owner, the second one the file’s group, and the last one all other users.
+
+Each write, read, and execute permissions have the following number value:
+r (read) = 4
+w (write) = 2
+x (execute) = 1
+no permissions = 0
+The permissions number of a specific user class is represented by the sum of the values of the permissions for that group.
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+chmod -R ugo+x 
+
+// chmod: This is the command used to change file permissions.
+-R: The -R option stands for "recursive," meaning the command will be applied not only to the current directory but also to all of its subdirectories and files.
+ugo+X: This part of the command adds the execute (+X) permission for all three user groups: user (owner), group, and others. The u stands for the user, g stands for the group, and o stands for others. The + sign means adding the specified permission (X, which is execute) to the existing permissions.
+.: The dot represents the current directory, so the command will be applied to the current directory and its entire directory tree
+In the chmod command, the lowercase x is used to set the execute permission specifically for the user, group, and others. For example:
+
+chmod u+x file: Sets execute permission for the user (file owner) only.
+chmod g+x file: Sets execute permission for the group (users in the same group as the file) only.
+chmod o+x file: Sets execute permission for others (everyone else) only.
+On the other hand, the uppercase X in the chmod command is used to set the execute permission, but it applies it selectively. It sets the execute permission for directories and symbolic links but does not set it for regular files. This is useful when you want to make directories traversable (searchable) but not execute regular files by default.
+
+By using X, you can set the execute permission only where it is appropriate (directories and symbolic links) without altering regular files that may not be meant to be executed.
+
+In summary, using lowercase x sets execute permission for specific user groups, while uppercase X sets execute permission for directories and symbolic links only.

@@ -1,0 +1,6 @@
+#!/bin/bash
+chmod u+x,g+x,o+r hello
+
+// So, whether you use u=x or u+x, both will grant execute permissions to the file owner. Similarly, you can also use u=rwx, u+rwx, or u=rw+x to achieve the same result of giving read, write, and execute permissions to the file owner.
+
+Remember, the main difference between using '=' and '+' is that '=' sets the exact permissions specified, while '+' adds the specified permission to the existing ones. So, u=x will only set the execute permission, removing any other permissions the owner might have, while u+x will add execute permission while keeping other permissions unchanged.
